@@ -202,7 +202,10 @@
                     Intel sets ambitious 2030 goals, including driving industry-wide 
                     progress on climate action, water stewardship, and waste reduction.
                   </p>
-                  <a href="#" class="btn btn-primary mt-auto">Learn More</a>
+                  <!-- Button to trigger the modal -->
+                  <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalRISE">
+                    Learn More
+                  </button>
                 </div>
               </div>
             </div>
@@ -216,7 +219,10 @@
                     environmental initiatives and partnerships across the semiconductor 
                     industry.
                   </p>
-                  <a href="#" class="btn btn-primary mt-auto">Learn More</a>
+                  <!-- Button to trigger the modal -->
+                  <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalCommitment">
+                    Learn More
+                  </button>
                 </div>
               </div>
             </div>
@@ -230,7 +236,10 @@
                     Intel also upcycles and recycles materials to reduce waste and 
                     advance a circular economy.
                   </p>
-                  <a href="#" class="btn btn-primary mt-auto">Learn More</a>
+                  <!-- Button to trigger the modal -->
+                  <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalWaterWaste">
+                    Learn More
+                  </button>
                 </div>
               </div>
             </div>
@@ -316,6 +325,63 @@
   // Initialize the observer
   observeLanguageChanges();
 </script>
+
+<!-- Modal for RISE Strategy -->
+<div class="modal fade" id="modalRISE" tabindex="-1" aria-labelledby="modalRISELabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalRISELabel">Intel's RISE Strategy</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Intel's RISE (Responsible, Inclusive, Sustainable, Enabling) strategy focuses on driving industry-wide progress on climate action, water stewardship, and waste reduction. By 2030, Intel aims to achieve net-zero greenhouse gas emissions and advance sustainable semiconductor manufacturing.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://www.intel.com/content/www/us/en/corporate-responsibility/2030-goals.html" target="_blank" class="btn btn-primary">Learn More on Intel</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Commitment -->
+<div class="modal fade" id="modalCommitment" tabindex="-1" aria-labelledby="modalCommitmentLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCommitmentLabel">Intel's Commitment</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        In 2022, Intel pledged to achieve net-zero greenhouse gas emissions (Scope 1 and 2) by 2040. This commitment builds on decades of environmental initiatives and partnerships across the semiconductor industry.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://www.intel.com/content/www/us/en/corporate-responsibility/2030-goals.html" target="_blank" class="btn btn-primary">Learn More on Intel</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Water & Waste -->
+<div class="modal fade" id="modalWaterWaste" tabindex="-1" aria-labelledby="modalWaterWasteLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalWaterWasteLabel">Water & Waste</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Intel conserves billions of gallons of water annually and collaborates with local communities to restore watersheds. Intel also upcycles and recycles materials to reduce waste and advance a circular economy.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://www.intel.com/content/www/us/en/corporate-responsibility/2030-goals.html" target="_blank" class="btn btn-primary">Learn More on Intel</a>
+      </div>
+    </div>
+  </div>
+</div>
   </body>
   <!-- End of Body -->
 </html>
